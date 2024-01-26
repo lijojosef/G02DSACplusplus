@@ -1,9 +1,9 @@
 /*
-    AAA
-    BBB
-    CCC
+       *
+      **
+     ***
+    ****
 */
-
 
 #include<iostream>
 using namespace std;
@@ -12,18 +12,23 @@ int main()
 {
     int n;
     cin>>n;
-
+    
     int i = 1;
     while(i <= n){
+
+        int space = n - i;
+        while(space > 0){
+            cout<<" ";
+            space--;
+        }
         int j = 1;
-        char start = 'A' + i -1;
-        while(j <= n){
-            cout<<start;
+        while(j <= i){
+            cout<<"*";
             j++;
         }
         cout<<endl;
         i++;
+        
     }
     return 0;
 }
-
