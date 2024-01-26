@@ -1,7 +1,7 @@
 /*
-    AAA
-    BBB
-    CCC
+    ABC
+    BCD
+    CDE
 */
 
 
@@ -16,14 +16,15 @@ int main()
     int i = 1;
     while(i <= n){
         int j = 1;
-        char start = 'A' + i -1;
+        char start = ('A' + i + j - 2);
+        // char start = 'A'+i-1;
         while(j <= n){
             cout<<start;
             j++;
+            start++;
         }
         cout<<endl;
         i++;
     }
     return 0;
 }
-
